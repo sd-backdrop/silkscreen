@@ -1022,6 +1022,13 @@ class ConfigDatabaseStorage implements ConfigStorageInterface {
   }
 
   /**
+   * {@inheritdoc}
+   */
+  public function isInitialized() {
+    return db_table_exists($this->table, array('target' => $this->database));
+  }
+
+  /**
    * Returns the path to the configuration file.
    *
    * @return string
