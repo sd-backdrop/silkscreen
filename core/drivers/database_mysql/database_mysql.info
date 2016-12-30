@@ -1,5 +1,7 @@
-name = MySQL Database Backend
-description = Enable the use of MySQL databases
+name = MySQL Database Driver
+description = Enable the use of MySQL, MariaDB and similar databases
+
+database_driver = mysql
 
 database_backend[DatabaseConnection_mysql] = database.inc
 database_backend[DatabaseTasks_mysql] = install.inc
