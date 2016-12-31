@@ -23,7 +23,7 @@ function system_views_data() {
   $data['file_managed']['table']['base'] = array(
     'field' => 'fid',
     'title' => t('File'),
-    'help' => t("Files maintained by Backdrop and various modules."),
+    'help' => t("Files maintained by Silkscreen and various modules."),
     'defaults' => array(
       'field' => 'filename'
     ),
