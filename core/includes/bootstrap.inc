@@ -3989,6 +3989,7 @@ function backdrop_autoload($class) {
 
   if (!isset($class_registry)) {
     include_once BACKDROP_ROOT . '/core/includes/bootstrap.classes.inc';
+    include_once BACKDROP_ROOT .'/core/includes/module.inc';
     $class_registry = backdrop_class_list();
     // Loop through all modules to build the list of classes. We avoid
     // module_invoke_all() because it uses array_merge_recursive(), which is an
